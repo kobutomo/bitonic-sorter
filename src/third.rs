@@ -115,9 +115,6 @@ mod tests {
             let mut x = new_u32_vec(65536);
             assert_eq!(sort(&mut x, &SortOrder::Descending), Ok(()));
             assert!(is_sorted_descending(&x));
-            let n = 32;
-            let sum: i32 = (1..n).sum();
-            assert_eq!(sum, 120);
         }
     }
 }
